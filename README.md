@@ -1,9 +1,10 @@
-Dota Records 1.0.1
+Dota Records 2.0
 
 Scrapes DOTABUFF for personal records of listed players and compares them to 
 generate a personal high-score table.
 
-Written by @onelivesleft, use as you will. Contact me there or at /u/-sideshow-
+Written by @onelivesleft, modified by @theshadowzero, use as you will. Contact @onelivesleft  there or at /u/-sideshow-, 
+and @theshadowzero there or at /u/TheShadowZero, or at https://github.com/ofsaleem/dotastats
 
 This is made for apache running mod_python, so you need that for it to work 
 (though rewriting for some other python engine wouldn't be hard).
@@ -22,3 +23,14 @@ change or leave as you will.
 Edit whatever image you want into the footer.png file, though if you change its
 height you need to update the CSS to match (I think you'd be better just 
 editting the blank footer.png file to what you want).
+
+
+
+
+---
+
+Currently I'm in the progress of fixing things, as Dotabuff changed something or other and now
+it all breaks. I also want to get it onto a SQLite backend, as using an html page as your database isn't the best idea,
+especially since Apache likes to cache half of it and duplicate the table, even with caching disabled.
+
+
